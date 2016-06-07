@@ -6,16 +6,19 @@ public class TesteCriptografia {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		String message;
+		String cryptographedMessage;
+		String decryptographedMessage;
+		
+		System.out.print("Insira sua mensagem não criptografada: ");
+		message = scanner.nextLine();
+		
+		cryptographedMessage = Cryptography.encriptContent(message);
+		System.out.println("Mensagem criptografada: " + cryptographedMessage);
+		
+		decryptographedMessage = Cryptography.decriptContent(cryptographedMessage);
+		System.out.println("Mensagem descriptografada: " + decryptographedMessage);
 
-		System.out.println("Insira sua mensagem");
-		String texto = scanner.nextLine();
-		String[] palavras = texto.split(" ");
-		
-		Mensagem mensagem = new Mensagem();
-		mensagem.adicionarPalavras(palavras);
-		
-		System.out.println(mensagem.criptografar().toString());
-		
 		scanner.close();
 	}
 
