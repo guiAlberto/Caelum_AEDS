@@ -23,8 +23,8 @@ public class ConjuntoEspalhamento {
 		return codigo;
 	}
 
-	private int calculaIndiceDaTabela(String palavra) {
-		int codigoDeEspalhamento = this.calculaCodigoDeEspalhamento(palavra);
+	private int calculaIndiceDaTabela(Object objeto) {
+		int codigoDeEspalhamento = objeto.hashCode();
 		codigoDeEspalhamento = Math.abs(codigoDeEspalhamento);
 		return codigoDeEspalhamento % this.tabela.size();
 	}
