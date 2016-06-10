@@ -9,10 +9,10 @@ public class TesteAdiciona {
 		conjunto.adiciona("Rafael");
 		conjunto.adiciona("Ana");
 		conjunto.adiciona("Paulo");
-		
+
 		List<String> palavras = conjunto.pegaTodas();
-		
-		for(String palavra : palavras){
+
+		for (String palavra : palavras) {
 			System.out.println(palavra);
 		}
 

@@ -1,7 +1,5 @@
 package br.com.caelum.ed.conjuntos;
 
-import java.util.List;
-
 public class TesteContem {
 
 	public static void main(String[] args) {
